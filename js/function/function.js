@@ -16,10 +16,14 @@ Add(5,20);
 Add(666,222);
 
 //four types of functions
+
 //named func
 //anonynous function
 //first with expression
 //arrow function
+//higher order function
+//life function
+//immediate invome function excution---this function is being called right  function decleartion
 
 //anonynous function
 
@@ -43,6 +47,8 @@ let newarr=(Name)=>(
     console.log("ia arrow function")
 )
 newarr();
+
+//higher orderfunction
 
 
 

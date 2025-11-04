@@ -13,8 +13,8 @@
 // console.log(place);
 // console.log(number);
 
-// let Name="Vicky";
-// console.log(Name);
+// let name="Vicky";
+// console.log(name);
 
 
 // {
@@ -27,7 +27,7 @@
 // var name="singham";
 // console.log(name);
 
-console.log(this)
+// console.log(this)
 
 // // console.log(Name2);
 
@@ -45,11 +45,11 @@ console.log(this)
 // console.log(name);
 
 
-// let name="vicky";
-// name="omkar";
-// console.log(name);
-// {
-//     let name="om";
-//     console.log(name);
-// }
-// console.log(name);
+let name="vicky";
+name="omkar";
+console.log(name);
+{
+    let name="om";
+    console.log(name);
+}
+console.log(name);
