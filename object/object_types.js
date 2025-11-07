@@ -68,8 +68,7 @@ console.log(c2);
 console.log(c3);
 console.log(c4);
 
-//task
-//add dept in all object
+//----------
 
 let public={
     Name : Vicky,
@@ -77,6 +76,7 @@ let public={
     city : pune
 }
 
+//way to acces particluar things form object
 console.log(public);
 console.log(Object.keys(public));
 console.log(Object.values(public));

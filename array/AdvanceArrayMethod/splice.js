@@ -3,7 +3,7 @@ let number=[10,20,30,40];
 console.log(number);
 
 let newVal=number.splice(1,2,100,200,3000)
-console.log(number);//
+console.log(number);
 console.log(newVal);//in this container only removed value will be store
 
 //in below line only we 1aree adding the array elemnt
