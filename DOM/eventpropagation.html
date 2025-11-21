@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(226, 178, 114);
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box{
+            margin-bottom: 50px;
+            margin-right: 50px;
+            align-items: center;
+             position: absolute;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn{
+            
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+       <div id="box">
+         <button id="btn">Click me</button>
+       </div>
+    </div>
+
+    <script>
+        //it will display as bottom to top (event bublling)
+        document.getElementById("parent").addEventListener("click",()=>{
+            console.log("parent clicked");
+            
+        })
+        document.getElementById("box").addEventListener("click",()=>{
+            console.log("box clicked");
+            
+        })
+        document.getElementById("btn").addEventListener("click",()=>{
+            console.log("btn clicked");
+            
+        })
+
+        //this is display target event
+        
+        //this is for event capturing -->top ele --->top to bottom (passing third argument true)
+          document.getElementById("parent").addEventListener("click",()=>{
+            console.log("parent clicked");
+            
+        },true)
+        document.getElementById("box").addEventListener("click",()=>{
+            console.log("box clicked");
+            
+        },true)
+        document.getElementById("btn").addEventListener("click",()=>{
+            console.log("btn clicked");
+            
+        },true)
+
+    </script>
+</body>
+</html>
